@@ -16,11 +16,11 @@ Parameters:
 
   GitSourceRepo:
     Type: String
-    Description: TODO - GitHub source repository - must contain a Dockerfile and buildspec.yml in the base
+    Description: https://github.com/gafaradetunji/cd0157_Final_Pipeline.git
     Default: cd0157_Final_Pipeline
     MinLength: 1
     MaxLength: 100
-    ConstraintDescription: You must enter a GitHub repository name
+    ConstraintDescription: cd0157_Final_Pipeline.git
 
   GitBranch:
     Type: String
@@ -28,7 +28,7 @@ Parameters:
     Description: TODO - GitHub git repository branch - change triggers a new build
     MinLength: 1
     MaxLength: 100
-    ConstraintDescription: You must enter a GitHub repository branch name
+    ConstraintDescription: main
 
   GitHubToken:
     Type: String
@@ -40,11 +40,11 @@ Parameters:
 
   GitHubUser:
     Type: String
-    Default: SudKul
-    Description: TODO - GitHub username or organization
+    Default: gafaradetunji
+    Description: gafaradetunji
     MinLength: 3
     MaxLength: 100
-    ConstraintDescription: You must enter a GitHub username or organization
+    ConstraintDescription: gafaradetunji
 
   CodeBuildDockerImage:
     Type: String
